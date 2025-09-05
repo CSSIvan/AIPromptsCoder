@@ -4,12 +4,19 @@ Requisitos Previos
 Para ejecutar este notebook, necesitas lo siguiente:
 
 Python 3.8
+
 google-generativeai
+
 textwrap
+
 sys
+
 abc
+
 IPython
+
 Instalación de Dependencias
+
 Puedes instalar las dependencias necesarias utilizando pip:
 
 pip install -U google-generativeai
