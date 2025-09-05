@@ -33,7 +33,9 @@ Asegúrate de configurar la clave API de Google en GOOGLE_API_KEY antes de ejecu
 
 Descripción del Código
 
-Configuración Inicial Se importan las bibliotecas necesarias y se configura el modelo de Google Generative AI con la clave API del usuario.
+Configuración Inicial
+
+Se importan las bibliotecas necesarias y se configura el modelo de Google Generative AI con la clave API del usuario.
 
    import google.generativeai as genai
    import textwrap
@@ -43,7 +45,11 @@ Configuración Inicial Se importan las bibliotecas necesarias y se configura el 
    from IPython.display import display, Markdown
    GOOGLE_API_KEY = userdata.get('GOOGLE_API_KEY')
    genai.configure(api_key = GOOGLE_API_KEY)
-Definición del Modelo Se define el modelo de generación de contenido utilizando Gemini 1.5:
+
+   
+Definición del Modelo
+
+Se define el modelo de generación de contenido utilizando Gemini 1.5:
 
    generation_config = {
      "temperature": 0.5,
@@ -57,7 +63,7 @@ Definición del Modelo Se define el modelo de generación de contenido utilizand
      generation_config=generation_config,
      system_instruction="Eres un asistente de estudio inteligente creado para ayudar a los estudiantes..."
    )
-Funciones Utilitarias Funciones para formatear el texto en Markdown, manejar la entrada del usuario, y mostrar menús y opciones.
+Funciones Utilitarias: Funciones para formatear el texto en Markdown, manejar la entrada del usuario, y mostrar menús y opciones.
 
 to_markdown(text): Formatea texto para ser compatible con Markdown.
 cerrar(): finaliza el programa
