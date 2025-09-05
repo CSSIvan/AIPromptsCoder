@@ -22,11 +22,17 @@ Instrucciones de Instalación
 Para ejecutar este notebook, sigue estos pasos:
 
 Clona el repositorio
+
 Navega al directorio del proyecto
+
 Instala las dependencias necesarias: pip install -U google-generativeai
+
 Abre el notebook AssistantAI.ipynb en Jupyter: jupyter notebook AssistantAI.ipynb
+
 Asegúrate de configurar la clave API de Google en GOOGLE_API_KEY antes de ejecutar el notebook.
+
 Descripción del Código
+
 Configuración Inicial Se importan las bibliotecas necesarias y se configura el modelo de Google Generative AI con la clave API del usuario.
 
    import google.generativeai as genai
